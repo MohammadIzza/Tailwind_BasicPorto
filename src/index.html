@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Latihan</title>
+</head>
+
+<body class ="p-10 pt-10 md:p-20">
+    <nav class="navbar flex">
+        <h2 class=" font-bold text-xl mr-10 md:text-3xl">My Portfolio</h2>
+        <ul class="menu flex items-center gap-5 md:gap-20">
+            <li class="home bg-grey-500 hover:scale-125 focus:bg-red-400">Home</li>
+            <li class="about ">About</li>
+            <li>Blog</li>
+        </ul>
+    </nav>
+    <section class="section-1 mt-20 items-center md:flex">
+        <section class="part-1 w-72 ">
+            <h1 class="font-bold text-4xl mb-5">Hi, I'm Mohammad Izza Hakiki, a Soldier</h1>
+            <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero
+                ducimus beatae aut exercitationem, earum eius voluptatum laboriosam
+                esse eaque molestias in excepturi quo, rem soluta vero. Eveniet eius
+                molestias eos!
+            </p>
+            <button class="tombol-1 bg-black text-white p-5 rounded-lg mr-5 hover:bg-gray-500 hover:scale-90 focus:bg-gray-200 ">Hire Me</button>
+            <button class="tombol-2 bg-black text-white p-5 rounded-lg hover:bg-gray-500 hover:scale-90 focus:bg-gray-200" >About Me</button>
+        </section>
+        <section class="part-2 flex justify-center mt-10 md:ml-64">
+            <img class="rounded-full aspect-square w-56 wd:w-96 " src="orang-1.jpg" alt="gambar orang banh" id="img-1" />
+        </section>
+    </section>
+    <section class="section-2 flex  gap-10 flex-wrap">
+        <div class="box-1 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+        <div class="box-2 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+        <div class="box-3 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+        <div class="box-4 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+        <div class="box-5 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+        <div class="box-6 w-72 mt-20 rounded-lg overflow-hidden border-solid border-black border-2">
+            <img src="orang-2.jpg" alt="orang 1" />
+            <p class="p-3">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci a
+                consequuntur provident natus minus molestiae, earum, neque cumque
+                explicabo aspernatur hic laudantium eius est cum optio commodi quas
+                sunt veritatis!
+            </p>
+        </div>
+    </section>
+    <footer class="mt-20">
+        <section class="footer-1 flex gap-5 justify-center">
+            <img class="w-14" src="facebook.png" alt="fb" />
+            <img class="w-14" src="instagram.png" alt="ig" />
+            <img class="w-14" src="linkedin.png" alt="in" />
+            <img class="w-14" src="twitter.png" alt="x" />
+        </section>
+        <section class="footer-2 flex justify-center mt-5 ">
+            <p>Copyright @2023 All Rights Reserved</p>
+        </section>
+    </footer>
+</body>
+<script>
+    let button = document.querySelector(".open");
+    let menu = document.querySelector("ul.menu");
+    let isActive = false;
+    button.addEventListener("click", () => {
+        if (isActive == false) {
+            menu.style.display = "block";
+            isActive = true;
+        } else {
+            menu.style.display = "none";
+            isActive = false;
+        }
+    });
+</script>
+
+</html>
